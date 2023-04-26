@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escola</title>
+</head>
+<body>
+    <form action="inserir.php" method="post">
+        Digite seu nome:
+        <input type="text" name="nome">
+        <br><br>
+        Digite sua idade:
+        <input type="number" name="idade">
+        <br><br>
+        <input type="submit" name="GRAVAR">
+        
+        
+
+    </form>
+    
+   <form action="excluir.php" method="post">
+    Digite a matrícula:
+    <input size="7" type="text" name="matricula" id="matricula">
+    <br><br>
+    <img onclick="Deletar()"; src="lixo.png" width="30px">
+
+   </form>
+
+</body>
+
+<script>
+    function Deletar()
+    {
+        M = matricula.value
+        window.open("excluir.php?M="+M,"_self")
+    }
+</script>
+
+</html>
